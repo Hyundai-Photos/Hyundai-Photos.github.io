@@ -1,0 +1,14 @@
+# main links
+main:
+  - title: "Home"
+    url:
+  - title: "Prints"
+    url: /print
+  - title: "Our Product"
+    url: /product
+  - title: "Make Order"
+    url: /order
+  - title: "About Us"
+    url: /about
+  - title: "Contact"
+    url: /contact

@@ -1,0 +1,42 @@
+{% if include.id %}
+  {% assign portfolio_row = page[include.id] %}
+{% else %}
+  {% assign portfolio_row = page.portfolio_row %}
+{% endif %}
+
+<div class="feature__wrapper">
+  {% for f in portfolio_row %}
+
+    {% if f.url contains "://" %}
+      {% capture f_url %}{{ f.url }}{% endcapture %}
+    {% else %}
+      {% capture f_url %}{{ f.url | absolute_url }}{% endcapture %}
+    {% endif %}
+
+    <div class="feature__item-small{% if include.type %}--{{ include.type }}{% endif %}">
+      <div class="archive__item-small">
+        {% if f.image_path %}
+          <div class="archive__item-teaser-small">
+            <a class="portfolio_container" href="{{f.url}}">
+              <img src=
+                {% if f.image_path contains "://" %}
+                  "{{ f.image_path }}"
+                {% else %}
+                  "{{ f.image_path | absolute_url }}"
+                {% endif %}
+              alt="{% if f.alt %}{{ f.alt }}{% endif %}">
+              <div class="portfolio_overlay" style="background: #9ca2a6;">
+                  <div class="portfolio_thumb-info">
+                    <h3>{{f.label}}</h3>
+                  </div>
+              </div>
+            </a>
+          </div>
+          {% if f.title %}
+         <h5 class="archive__item-title-small">{{ f.title }}</h5>
+       {% endif %}
+        {% endif %}
+      </div>
+    </div>
+  {% endfor %}
+</div>
