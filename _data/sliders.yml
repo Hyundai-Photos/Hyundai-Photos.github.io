@@ -24,6 +24,87 @@
     # previousNavSelector:
     # nextNavSelector:
 
+- selector: slider2
+  bullets: true
+  captions: true
+  images:
+    - src: /assets/images/print/print1.jpg
+      # alt: Best Pictures
+    - src: /assets/images/print/print2.jpg
+      # alt: Wedding Albums
+  settings:
+    height: "'auto'"
+    # initialHeight:
+    # maxHeight:
+    interval: 3000
+    transitionDuration: 600
+    effect: "'fade'"
+    disableNav: false
+    keyboardNav: true
+    # previousNavSelector:
+    # nextNavSelector:
+
+- selector: slider3
+  bullets: true
+  captions: true
+  images:
+    - src: /assets/images/product/product1.jpg
+      # alt: Best Pictures
+    - src: /assets/images/product/product2.jpg
+      # alt: Wedding Albums
+    - src: /assets/images/product/product3.jpg
+      # alt: Wedding Albums
+  settings:
+    height: "'auto'"
+    # initialHeight:
+    # maxHeight:
+    interval: 3000
+    transitionDuration: 600
+    effect: "'fade'"
+    disableNav: false
+    keyboardNav: true
+    # previousNavSelector:
+    # nextNavSelector:
+
+- selector: slider4
+  bullets: true
+  captions: true
+  images:
+    - src: /assets/images/order/order1.jpg
+      # alt: Best Pictures
+  settings:
+    height: "'auto'"
+    # initialHeight:
+    # maxHeight:
+    # interval: 3000
+    # transitionDuration: 600
+    # effect: "'fade'"
+    disableNav: false
+    keyboardNav: true
+    # previousNavSelector:
+    # nextNavSelector:
+
+- selector: slider5
+  bullets: true
+  captions: true
+  images:
+    - src: /assets/images/product/product2.jpg
+      # alt: Best Pictures
+  settings:
+    height: "'auto'"
+    width: "'auto'"
+    # initialHeight:
+    # maxHeight:
+    # interval: 3000
+    # transitionDuration: 600
+    # effect: "'fade'"
+    disableNav: false
+    keyboardNav: true
+    # previousNavSelector:
+    # nextNavSelector:
+
+
+
 # - selector: slider2
 #   bullets: true
 #   captions: true
